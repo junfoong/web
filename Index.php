@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
 </head>
-<!--command2-->
+<!--command-->
 <header>
     <div class="navContainer" id="navbar">
         <div>
