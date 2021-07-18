@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Loop', cursive;}
+
+body {
+    background-image: url("Image/Background.jpg");
+    background-repeat: no-repeat;
+    font-size: 22px;
+    line-height: 32px;
+    word-wrap: break-word;
+    color: #666;
+}
+
+header {
+    color: black;
+}
+
+a {
+    color: #fff;
+}
+
+.navContainer {
+    margin: 0 auto;
+
+}
+nav {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #ffff;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+nav a:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#signIn {
+    float: right;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #087A66;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+    background-color: #087A66;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after {
+    content: " +";
+}
+
+li > a:only-child:after {
+    content: "";
+
+}
+
+.mySlides{
+    display: none;
+}
+
+/* STRUCTURE */
+body h1{
+    line-height: 1em;
+    text-decoration: underline;
+    padding: 20px 0 0 10px;
+}
+
+.wrapper {
+    padding: 5px;
+    max-width: 90%;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    border: 2px solid gray;
+    margin: 2px;
+    padding: 10px;
+}
+
+.column p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+.column:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .columns .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .columns .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 680px) {
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
+
+button {
+    font-size: 1.12em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ad0000;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin: 10px 0px 20px 6em;
+}
+.button:focus, .button:hover {
+    background: #890000;
+}
+.button:active {
+    background: #c10000;
+}
+
