@@ -8,11 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index123</title>
 </head>
-<!--command Demo3-->
-<!-- Wakanda Forever -->
-<!--command Demo-->
-<!Demo 1234134-->
-<!Demo 1234134-->
 
 <header>
     <div class="navContainer" id="navbar">
